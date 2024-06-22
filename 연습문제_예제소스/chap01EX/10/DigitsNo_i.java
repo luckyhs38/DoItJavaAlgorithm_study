@@ -6,10 +6,17 @@ import java.util.Scanner;
 class DigitsNo_i {
 
 	public static void main(String[] args) {
+		int count = 0;
+		int i;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("양의 정수를 입력하세요 : "); 
-		int i = sc.nextInt();
-		
+		i = sc.nextInt();
+		while (i > 0){
+			i /= 10;
+			count ++;
+		}
+
+		System.out.println("그 수는 "+ count +"자리입니다");
 
 	}
 }
